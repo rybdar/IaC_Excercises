@@ -1,7 +1,6 @@
 param location string = 'austriaeast'
-param storageAccountName string = 'toylaunchstorage7163354${uniqueString(resourceGroup().id)}'
-param appServiceAppName string = 'toylaunch${uniqueString(resourceGroup().id)}'
-
+param storageAccountName string = 'toystore${uniqueString(resourceGroup().id)}'
+param appServiceAppName string = 'toy${uniqueString(resourceGroup().id)}'
 @allowed([
   'nonprod'
   'prod'
